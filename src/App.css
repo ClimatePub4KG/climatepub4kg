@@ -1,0 +1,118 @@
+#root {
+  max-width: 1280px; /*1280px*/
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* Header Styling */
+.header {
+  text-align: center;
+  background-color: #fff; /* Optional: Add a light background color */
+  padding: 0; /* Add some spacing for the header content */
+  margin: 0;
+}
+
+.logo {
+  position: absolute; /* Allows positioning relative to the nearest positioned parent */
+  top: 20px; /* Distance from the top edge of the page */
+  left: 20px; /* Distance from the left edge of the page */
+  height: 140px; /* Adjust size */
+  width: 160px; /* Maintain aspect ratio */
+  background: url('images.logov2.png') no-repeat center/cover;
+  background-color: #fff;
+  clip-path: circle(60%); /* Crops the image to a circle */
+}
+
+/* Header Image Styling */
+.header-image {
+  width: 100%; /* Makes the image span the full width of the page */
+  height: 300px; /* Fixes the height to 300px */
+  object-fit: cover; /* Crops the image proportionally to fill the space */
+  display: block; /* Removes any inline spacing */
+  margin: 0 auto; /* Centers the image horizontally */
+}
+
+.header h1 {
+  font-size: 3rem; /* Adjust size for the title */
+  color: #000; /* Text color for h1 */
+  margin-bottom: 10px; /* Space below h1 */
+}
+
+.header p {
+  font-size: 1.5rem; /* Adjust size for the description */
+  color: #000; /* Text color for p */
+  margin: 0; /* Remove any extra margin */
+}
+
+
+/* Main Body Section */
+.body {
+  padding: 40px 20px;
+  background-color: white;
+}
+
+.section h2 {
+  font-size: 2rem;
+  color: #000;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.section p {
+  font-size: 1.3rem;
+  margin-bottom: 20px;
+  color: #000;
+}
+
+.section img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+/* Team Section */
+.team-section {
+  background-color: #fff;
+}
+
+.team-section h2 {
+  font-size: 2rem;
+  color: #000;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+/* Team Image */
+.team-image {
+  display: flex; /* Use flexbox for centering */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  margin: 20px auto; /* Center the image container */
+  height: 600px;
+  width: 1000px;
+}
+
+.team-image img {
+  width: 100%; /* Take full width of the container */
+  height: 100%; /* Take full height of the container */
+  object-fit: cover; /* Ensure the image maintains aspect ratio */
+  border-radius: 10px; /* Optional: Add slight rounding to corners */
+}
+
+/* Footer Section */
+.footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px 10px;
+  margin-top: 40px;
+}
+
+.footer p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #aaa;
+}
+
