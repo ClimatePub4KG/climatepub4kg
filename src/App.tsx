@@ -7,7 +7,7 @@ const App: React.FC = () => {
       {/* <img src="images/header.jpg" className="header-image" alt="Header Image" /> */}
       {/* Header Section */}
       <header className="header">
-        <img src="/climatepub4kg/docs/assets/img/logo.png" className="logo" alt="Logo" />
+        <img src="/climatepub4kg/images/logo.png" className="logo" alt="Logo" />
         <h1>ClimatePub4KG</h1>
         <p>Knowledge Graph to Support Evaluation and Development of Climate Models</p>
       </header>
@@ -55,7 +55,7 @@ const App: React.FC = () => {
             provides a comprehensive set of terms that are essential for categorizing and accessing climate 
             science literature, particularly for climate modeling research.
           </p>
-          <img src="/climatepub4kg/docs/assets/img/GCMD+.png" alt="GCMD+ Taxonomy" className="section-image" />
+          <img src="/climatepub4kg/images/GCMD+.png" alt="GCMD+ Taxonomy" className="section-image" />
           <hr />
         </section>
 
@@ -75,7 +75,7 @@ const App: React.FC = () => {
             more efficient discovery, categorization, and use of climate modeling resources, fostering 
             collaboration and innovation in climate research.
           </p>
-          <img src="/climatepub4kg/docs/assets/img/overview.png" alt="Method Overview" className="section-image" />
+          <img src="/climatepub4kg/images/overview.png" alt="Method Overview" className="section-image" />
           <hr />
         </section>
 
@@ -85,7 +85,7 @@ const App: React.FC = () => {
           
           {/* Grid of Team Members */}
           <div className="team-image">
-          <img src="/climatepub4kg/docs/assets/img/Slide1.jpg" alt="Team Member 1" />
+          <img src="/climatepub4kg/images/Slide1.jpg" alt="Team Member 1" />
           </div>
           <hr />
         </section>
