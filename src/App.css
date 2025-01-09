@@ -7,8 +7,9 @@
 /* Header Styling */
 .header {
   text-align: center;
-  background-color: #fff; /* Optional: Add a light background color */
-  padding: 0; /* Add some spacing for the header content */
+  background-color: #fff;
+  padding-top: 30px; /* Space between the top of the page and the header content */
+  padding-bottom: 15px; /* Space below the header content */
   margin: 0;
 }
 
@@ -18,19 +19,44 @@
   left: 20px; /* Distance from the left edge of the page */
   height: 140px; /* Adjust size */
   width: 160px; /* Maintain aspect ratio */
-  background: url('images.logov2.png') no-repeat center/cover;
   background-color: #fff;
   clip-path: circle(60%); /* Crops the image to a circle */
 }
 
-/* Header Image Styling */
-.header-image {
-  width: 100%; /* Makes the image span the full width of the page */
-  height: 300px; /* Fixes the height to 300px */
-  object-fit: cover; /* Crops the image proportionally to fill the space */
-  display: block; /* Removes any inline spacing */
-  margin: 0 auto; /* Centers the image horizontally */
+/* Navigation Container */
+.nav-container {
+  position: absolute;
+  top: 20px; /* Aligns with the logo vertically */
+  right: 20px; /* Moves to the right side of the screen */
 }
+
+/* Navigation Links */
+.nav-links {
+  display: inline-block; /* Keeps links inline */
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-links li {
+  display: inline-block;
+  margin-left: 20px; /* Adds spacing between links */
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #000;
+  font-size: 1.3rem;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-links a:hover {
+  background-color: #f0f0f0;
+  color: #000;
+}
+
 
 .header h1 {
   font-size: 3rem; /* Adjust size for the title */
@@ -39,13 +65,20 @@
 }
 
 .header p {
-  font-size: 1.5rem; /* Adjust size for the description */
+  font-size: 1.8rem; /* Adjust size for the description */
   color: #000; /* Text color for p */
   margin: 0; /* Remove any extra margin */
 }
 
 
 /* Main Body Section */
+
+.contact-body {
+  overflow: hidden; /* Disable scrolling */
+  height: 100%; /* Ensure the body fills the full viewport */
+  margin: 0; /* Remove extra margins */
+}
+
 .body {
   padding: 40px 20px;
   background-color: white;
@@ -101,6 +134,73 @@
   border-radius: 10px; /* Optional: Add slight rounding to corners */
 }
 
+/* Contact Page Container */
+.contact-page {
+    max-width: 800px;
+    margin-top: 80px;
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  }
+  
+  /* Page Title */
+  .contact-page h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #000;
+  }
+  
+  /* Introductory Text */
+  .contact-page p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #000;
+  }
+  
+  /* Email List */
+  .contact-page ul {
+    list-style: none; /* Remove bullets */
+    padding: 0;
+    text-align: center;
+  }
+  
+  .contact-page ul li {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+  }
+  
+  .contact-page a {
+    color: #007acc;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .contact-page a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 600px) {
+    .contact-page {
+      padding: 20px;
+    }
+  
+    .contact-page h1 {
+      font-size: 2rem;
+    }
+  
+    .contact-page p,
+    .contact-page ul li {
+      font-size: 1rem;
+    }
+  }
+
 /* Footer Section */
 .footer {
   background-color: #333;
@@ -108,6 +208,7 @@
   text-align: center;
   padding: 20px 10px;
   margin-top: 40px;
+  
 }
 
 .footer p {

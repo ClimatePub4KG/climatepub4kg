@@ -1,0 +1,73 @@
+/* Contact Page Container */
+
+.contact-page {
+    max-width: 2000px;
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    /* Centering Styles */
+    position: absolute; /* Position relative to the viewport */
+    top: 50%; /* Move to 50% from the top */
+    left: 50%; /* Move to 50% from the left */
+    transform: translate(-50%, -50%); /* Offset by half its width and height to center perfectly */
+    margin-bottom: 50px;
+  }
+  
+  /* Page Title */
+  .contact-page h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #000;
+  }
+  
+  /* Introductory Text */
+  .contact-page p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #000;
+  }
+  
+  /* Email List */
+  .contact-page ul {
+    list-style: none; /* Remove bullets */
+    padding: 0;
+    text-align: center;
+  }
+  
+  .contact-page ul li {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+  }
+  
+  .contact-page a {
+    color: #007acc;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .contact-page a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 600px) {
+    .contact-page {
+      padding: 20px;
+    }
+  
+    .contact-page h1 {
+      font-size: 2rem;
+    }
+  
+    .contact-page p,
+    .contact-page ul li {
+      font-size: 1rem;
+    }
+  }
+  
