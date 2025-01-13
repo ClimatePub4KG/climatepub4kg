@@ -57,7 +57,6 @@
   color: #000;
 }
 
-
 .header h1 {
   font-size: 3rem; /* Adjust size for the title */
   color: #000; /* Text color for h1 */
@@ -107,32 +106,68 @@
 
 /* Team Section */
 .team-section {
+  padding: 20px;
   background-color: #fff;
 }
 
 .team-section h2 {
-  font-size: 2rem;
-  color: #000;
+  font-size: 2em;
   margin-bottom: 20px;
-  text-transform: uppercase;
 }
 
-/* Team Image */
-.team-image {
-  display: flex; /* Use flexbox for centering */
-  justify-content: center; /* Center horizontally */
-  align-items: center; /* Center vertically */
-  margin: 20px auto; /* Center the image container */
-  height: 600px;
-  width: 1000px;
+.team-grid {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: center;
 }
 
-.team-image img {
-  width: 100%; /* Take full width of the container */
-  height: 100%; /* Take full height of the container */
-  object-fit: cover; /* Ensure the image maintains aspect ratio */
-  border-radius: 10px; /* Optional: Add slight rounding to corners */
+.team-member {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
 }
+
+.team-member img {
+  width: 100%; /* Fixed width for all images */
+  height: 200px; /* Fixed height for all images */
+  object-fit: cover; /* Ensure the image fits the box without distortion */
+  object-position: center; /* Centers the image content */
+  border-radius: 10px; /* Optional: Rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Shadow for aesthetics */
+}
+
+.team-info {
+  padding: 10px 0;
+  text-align: center;
+}
+
+.team-info h3 {
+  margin: 5px 0;
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+.team-info p {
+  margin: 0;
+  color: #555;
+  font-size: 0.9em;
+}
+
+/* Adjusting spacing for top and bottom rows */
+.team-grid > .team-member:nth-last-child(-n+3) {
+  grid-column: span 1; /* Ensures bottom row items are evenly spaced */
+  justify-self: center; /* Centers each item */
+}
+
+.team-member:hover {
+  transform: scale(1.05);
+}
+
 
 /* Contact Page Container */
 .contact-page {
