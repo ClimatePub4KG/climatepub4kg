@@ -9,6 +9,10 @@ const App: React.FC = () => {
           <img src="/climatepub4kg/images/logo.png" className="logo" alt="Logo" />
           <div className="nav-container">
             <ul className="nav-links">
+              <li><a href="#introduction">Introduction</a></li>
+              <li><a href="#gcmd">GCMD+</a></li>
+              <li><a href="#overview">Overview</a></li>
+              <li><a href="#team">Team</a></li>
               <li><a href="#demo">Demo</a></li>
             </ul>
           </div>
@@ -18,7 +22,7 @@ const App: React.FC = () => {
 
         <main className="body">
         {/* Introduction Section */}
-        <section className="section">
+        <section id="introduction" className="section">
           <h2>Introduction</h2>
           <p>
             The goal of this project is to create a comprehensive multimodal knowledge graph that highlights 
@@ -44,7 +48,7 @@ const App: React.FC = () => {
         </section>
 
         {/* GCMD+ Taxonomy Section */}
-        <section className="section">
+        <section id="gcmd" className="section">
           <h2>GCMD+ Taxonomy</h2>
           <p>
             GCMD+ taxonomy is an extension of the most recent version of the Global Change Master Directory 
@@ -63,7 +67,7 @@ const App: React.FC = () => {
         </section>
 
         {/* Method Overview Section */}
-        <section className="section">
+        <section id="overview" className="section">
           <h2>Method Overview</h2>
           <p>
             This project involves constructing a comprehensive Knowledge Graph by leveraging existing 
@@ -83,14 +87,14 @@ const App: React.FC = () => {
         </section>
 
         {/* Team Section */}
-        <section className="team-section">
+        <section id="team" className="team-section">
           <h2>Team </h2>
           <p>Team Email: <a href="mailto:climatepub4kg@gmail.com">climatepub4kg@gmail.com</a></p>
           
           <div className="team-grid">
           {/* Top row (4 people) */}
           <div className="team-member">
-            <img src="/climatepub4kg/public/images/Dragut.jpg" alt="Team Member 1" />
+            <img src="/climatepub4kg/images/Dragut.jpg" alt="Team Member 1" />
             <div className="team-info">
               <h3>Eduard Dragut<br></br>
                 PI
@@ -99,7 +103,7 @@ const App: React.FC = () => {
             </div>
           </div>
           <div className="team-member">
-            <img src="/climatepub4kg/public/images/latecki.jpg" alt="Team Member 2" />
+            <img src="/climatepub4kg/images/Latecki.jpg" alt="Team Member 2" />
             <div className="team-info">
               <h3>Longin Jan Latecki <br></br>
                 Co-PI
@@ -108,7 +112,7 @@ const App: React.FC = () => {
             </div>
           </div>
           <div className="team-member">
-            <img src="/climatepub4kg/public/images/Mustapha.jpg" alt="Team Member 3" />
+            <img src="/climatepub4kg/images/Mustapha.jpg" alt="Team Member 3" />
             <div className="team-info">
               <h3>Adamu Mustapha <br></br>
                 Postdoctoral Fellow
@@ -117,40 +121,49 @@ const App: React.FC = () => {
             </div>
           </div>
           <div className="team-member">
-            <img src="/climatepub4kg/public/images/Pan.jpg" alt="Team Member 4" />
+            <img src="/climatepub4kg/images/Pan.jpg" alt="Team Member 4" />
             <div className="team-info">
               <h3>Jo Pan <br></br>
-                RA
+                Graduate Student
               </h3>
               <p><a href="mailto:huitong.pan@temple.edu">huitong.pan@temple.edu</a></p>
             </div>
           </div>
           {/* Bottom row (3 people) */}
           <div className="team-member">
-            <img src="/climatepub4kg/public/images/Zhang.jpg" alt="Team Member 5" />
+            <img src="/climatepub4kg/images/Zhang.jpg" alt="Team Member 5" />
             <div className="team-info">
               <h3>Qi Zhang <br></br>
-                RA
+                Graduate Student
               </h3>
               {/* <p>chris.green@example.com</p> */}
             </div>
           </div>
           <div className="team-member">
-            <img src="/climatepub4kg/public/images/Reizas.jpg" alt="Team Member 6" />
+            <img src="/climatepub4kg/images/Reizas.jpg" alt="Team Member 6" />
             <div className="team-info">
               <h3>Eric Reizas<br></br>
-                REU
+                Undergraduate Student
               </h3>
               {/* <p>samantha.blue@example.com</p> */}
             </div>
           </div>
           <div className="team-member">
-            <img src="/climatepub4kg/public/images/Hageman.jpg" alt="Team Member 7" />
+            <img src="/climatepub4kg/images/Hageman.jpg" alt="Team Member 7" />
             <div className="team-info">
               <h3>Caleb Hageman<br></br>
-                REU
+                Undergraduate Student
               </h3>
               {/* <p>daniel.gray@example.com</p> */}
+            </div>
+          </div>
+          <div className="team-member">
+            <img src="/climatepub4kg/images/Acharya.jpg" alt="Team Member 8" />
+            <div className="team-info">
+              <h3>Aayush Acharya<br></br>
+                Graduate Student
+              </h3>
+              <p><a href="mailto:aayush.acharya@temple.edu">huitong.pan@temple.edu</a></p>
             </div>
           </div>
         </div>

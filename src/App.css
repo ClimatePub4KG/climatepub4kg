@@ -119,6 +119,7 @@
   display: grid;
   gap: 30px;
   grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, auto);
   justify-content: center;
 }
 
@@ -158,10 +159,10 @@
   font-size: 0.9em;
 }
 
-/* Adjusting spacing for top and bottom rows */
-.team-grid > .team-member:nth-last-child(-n+3) {
-  grid-column: span 1; /* Ensures bottom row items are evenly spaced */
-  justify-self: center; /* Centers each item */
+/* Ensure all rows are spaced evenly */
+.team-grid > .team-member:nth-child(-n+4) {
+  grid-column: span 1; /* Ensures top row items are evenly spaced */
+  justify-self: center; /* Centers each item in the top row */
 }
 
 .team-member:hover {
