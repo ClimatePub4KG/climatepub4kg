@@ -15,7 +15,7 @@
 
 .logo {
   position: absolute; /* Allows positioning relative to the nearest positioned parent */
-  top: 20px; /* Distance from the top edge of the page */
+  top: 50px; /* Distance from the top edge of the page */
   left: 20px; /* Distance from the left edge of the page */
   height: 140px; /* Adjust size */
   width: 160px; /* Maintain aspect ratio */
@@ -25,9 +25,16 @@
 
 /* Navigation Container */
 .nav-container {
-  position: absolute;
-  top: 20px; /* Aligns with the logo vertically */
-  right: 20px; /* Moves to the right side of the screen */
+  position: fixed;
+  top: 0; /* Sticks the nav container to the top of the viewport */
+  left: 0; /* Aligns the container to the left of the screen */
+  width: 99%; /* Spans the entire width of the screen */
+  background-color: #f9f9f9; /* Background color for the nav container */
+  display: flex; /* Use flexbox to control alignment of the tabs */
+  justify-content: flex-end; /* Aligns the tabs to the right */
+  padding: 10px 20px; /* Adds padding for spacing inside the container */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: adds a subtle shadow */
+  z-index: 1000; /* Ensures the nav stays above other elements */
 }
 
 /* Navigation Links */
@@ -84,10 +91,9 @@
 }
 
 .section h2 {
-  font-size: 2rem;
+  font-size: 2.5rem;
   color: #000;
   margin-bottom: 20px;
-  text-transform: uppercase;
 }
 
 .section p {
@@ -105,70 +111,55 @@
 }
 
 /* Team Section */
-.team-section {
-  padding: 20px;
-  background-color: #fff;
-}
-
 .team-section h2 {
-  font-size: 2em;
+  font-size: 2.5rem;
+  color: #000;
   margin-bottom: 20px;
 }
 
-.team-grid {
-  display: grid;
-  gap: 30px;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(2, auto);
-  justify-content: center;
+.team-section p {
+  font-size: 1.3rem;
+}
+
+.team-group {
+  display: flex; /* Display the team members in a row */
+  flex-wrap: wrap; /* Wrap to a new line if there are too many items */
+  gap: 16px; /* Add spacing between the cards */
+  justify-content: flex-start; /* Center the cards within the group */
+  margin: 16px 0;
 }
 
 .team-member {
   display: flex;
-  flex-direction: column;
+  flex-direction: column; /* Ensure content is stacked vertically */
   align-items: center;
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
+  text-align: center;
+  background-color: #f9f9f9; /* Card background color */
+  border: 1px solid #ddd; /* Card border */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for the card effect */
+  overflow: hidden; /* Clip content inside the card */
+  width: 300px; /* Set card width */
+  padding: 0; /* Remove default padding */
 }
 
 .team-member img {
-  width: 100%; /* Fixed width for all images */
-  height: 200px; /* Fixed height for all images */
-  object-fit: cover; /* Ensure the image fits the box without distortion */
-  object-position: center; /* Centers the image content */
-  border-radius: 10px; /* Optional: Rounded corners */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Shadow for aesthetics */
+  width: 100%; /* Make the image take up the full width of the card */
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Prevent inline gap below the image */
 }
 
 .team-info {
-  padding: 10px 0;
-  text-align: center;
+  background-color: #f9f9f9; /* Background for the text area */
+  padding: 16px; /* Space around the text */
+  border-top: 1px solid #ddd; /* Separate the image from the text */
 }
 
 .team-info h3 {
-  margin: 5px 0;
-  font-size: 1.1em;
+  font-size: 18px;
+  margin: 8px 0 4px; /* Adjust spacing for the name */
   font-weight: bold;
 }
-
-.team-info p {
-  margin: 0;
-  color: #555;
-  font-size: 0.9em;
-}
-
-/* Ensure all rows are spaced evenly */
-.team-grid > .team-member:nth-child(-n+4) {
-  grid-column: span 1; /* Ensures top row items are evenly spaced */
-  justify-self: center; /* Centers each item in the top row */
-}
-
-.team-member:hover {
-  transform: scale(1.05);
-}
-
 
 /* Contact Page Container */
 .contact-page {
@@ -251,5 +242,14 @@
   margin: 0;
   font-size: 0.9rem;
   color: #aaa;
+}
+
+.footer img {
+  width: 50px; /* Adjust the size of the image */
+  height: 50px; /* Keep height and width equal for a perfect circle */
+  border-radius: 50%; /* Makes the image circular */
+  object-fit: cover; /* Ensures the image scales properly inside the circle */
+  border: 2px solid #ddd; /* Optional: Adds a border around the image */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow */
 }
 

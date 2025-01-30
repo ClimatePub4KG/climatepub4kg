@@ -10,10 +10,15 @@ const App: React.FC = () => {
           <div className="nav-container">
             <ul className="nav-links">
               <li><a href="#introduction">Introduction</a></li>
-              <li><a href="#gcmd">GCMD+</a></li>
+              <li><a href="#ClimatePub4KG">ClimatePub4KG</a></li>
               <li><a href="#overview">Overview</a></li>
               <li><a href="#team">Team</a></li>
-              <li><a href="#demo">Demo</a></li>
+              <li>
+                <a href="https://nam10.safelinks.protection.outlook.com/?url=https%3A%2F%2Ffrink.apps.renci.org%2F%3Fquery%3DPREFIX%2Brdf%3A%2B%253Chttp%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%2523%253E%250APREFIX%2Brdfs%3A%2B%253Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%2523%253E%250ASELECT%2B*%2BWHERE%2B%257b%250A%2B%2B%3Fsub%2B%3Fpred%2B%3Fobj%2B.%250A%257d%2BLIMIT%2B10%26sources%3Dclimatepub4kg&data=05%7C02%7Ccaleb.hageman%40temple.edu%7Cde51bfa2d9234bb62eb208dd33f99f8f%7C716e81efb52244738e3110bd02ccf6e5%7C0%7C0%7C638723869405502070%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=SFBfRLqlaBZ5RasGSN0oXv1FcI5rPy6A5OESOUU6Ly8%3D&reserved=0" target="_blank" rel="noopener noreferrer">
+                  Demo
+                </a>
+              </li>
+
             </ul>
           </div>
           <h1>ClimatePub4KG</h1>
@@ -48,8 +53,8 @@ const App: React.FC = () => {
         </section>
 
         {/* GCMD+ Taxonomy Section */}
-        <section id="gcmd" className="section">
-          <h2>GCMD+ Taxonomy</h2>
+        <section id="ClimatePub4KG" className="section">
+          <h2>What is ClimatePub4KG?</h2>
           <p>
             GCMD+ taxonomy is an extension of the most recent version of the Global Change Master Directory 
             (GCMD) from NASA. To enhance the taxonomy's breadth and depth, we incorporated additional resources, 
@@ -62,13 +67,12 @@ const App: React.FC = () => {
             provides a comprehensive set of terms that are essential for categorizing and accessing climate 
             science literature, particularly for climate modeling research.
           </p>
-          <img src="/climatepub4kg/images/GCMD+.png" alt="GCMD+ Taxonomy" className="section-image" />
           <hr />
         </section>
 
         {/* Method Overview Section */}
         <section id="overview" className="section">
-          <h2>Method Overview</h2>
+          <h2>Who uses it?</h2>
           <p>
             This project involves constructing a comprehensive Knowledge Graph by leveraging existing 
             taxonomies, advanced language models, and post-processing techniques to organize climate science 
@@ -82,91 +86,101 @@ const App: React.FC = () => {
             more efficient discovery, categorization, and use of climate modeling resources, fostering 
             collaboration and innovation in climate research.
           </p>
-          <img src="/climatepub4kg/images/overview.png" alt="Method Overview" className="section-image" />
           <hr />
         </section>
 
         {/* Team Section */}
         <section id="team" className="team-section">
           <h2>Team </h2>
-          <p>Team Email: <a href="mailto:climatepub4kg@gmail.com">climatepub4kg@gmail.com</a></p>
-          
-          <div className="team-grid">
-          {/* Top row (4 people) */}
-          <div className="team-member">
-            <img src="/climatepub4kg/images/Dragut.jpg" alt="Team Member 1" />
-            <div className="team-info">
-              <h3>Eduard Dragut<br></br>
-                PI
-              </h3>
-              {/* <p>john.doe@example.com</p> */}
+          <p>Team Email: <a href="mailto:climatepub4kg@gmail.com">climatepub4kg@gmail.com</a></p> 
+          {/* Investigators */}
+          <h2>Investigators</h2>
+          <div className="team-group">
+            <div className="team-member">
+              <img src="/climatepub4kg/images/Dragut.jpg" alt="Eduard Dragut" />
+              <div className="team-info">
+                <h3>Eduard Dragut</h3>
+              </div>
+            </div>
+            <div className="team-member">
+              <img src="/climatepub4kg/images/Latecki.jpg" alt="Longin Jan Latecki" />
+              <div className="team-info">
+                <h3>Longin Jan Latecki</h3>
+              </div>
             </div>
           </div>
-          <div className="team-member">
-            <img src="/climatepub4kg/images/Latecki.jpg" alt="Team Member 2" />
-            <div className="team-info">
-              <h3>Longin Jan Latecki <br></br>
-                Co-PI
-              </h3>
-              {/* <p>jane.smith@example.com</p> */}
+
+          {/* Postdoctoral Fellows */}
+          <h2>Postdoctoral Fellows</h2>
+          <div className="team-group">
+            <div className="team-member">
+              <img src="/climatepub4kg/images/Mustapha.jpg" alt="Adamu Mustapha" />
+              <div className="team-info">
+                <h3>Adamu Mustapha</h3>
+              </div>
+            </div>
+            <div className="team-member">
+              <img src="/climatepub4kg/images/Rudko.jpg" alt="Michael Rudko" />
+              <div className="team-info">
+                <h3>Michael Rudko</h3>
+              </div>
             </div>
           </div>
-          <div className="team-member">
-            <img src="/climatepub4kg/images/Mustapha.jpg" alt="Team Member 3" />
-            <div className="team-info">
-              <h3>Adamu Mustapha <br></br>
-                Postdoctoral Fellow
-              </h3>
-              {/* <p>michael.brown@example.com</p> */}
+
+          <h2>Graduate Students</h2>
+          <div className="team-group">
+            <div className="team-member">
+              <img src="/climatepub4kg/images/Pan.jpg" alt="Jo Pan" />
+              <div className="team-info">
+                <h3>Jo Pan</h3>
+              </div>
+            </div>
+            <div className="team-member">
+              <img src="/climatepub4kg/images/Zhang.jpg" alt="Qi Zhang" />
+              <div className="team-info">
+                <h3>Qi Zhang</h3>
+              </div>
+            </div>
+            <div className="team-member">
+              <img src="/climatepub4kg/images/Acharya.jpg" alt="Aayush Acharya" />
+              <div className="team-info">
+                <h3>Aayush Acharya</h3>
+              </div>
             </div>
           </div>
-          <div className="team-member">
-            <img src="/climatepub4kg/images/Pan.jpg" alt="Team Member 4" />
-            <div className="team-info">
-              <h3>Jo Pan <br></br>
-                Graduate Student
-              </h3>
-              <p><a href="mailto:huitong.pan@temple.edu">huitong.pan@temple.edu</a></p>
+
+          <h2>Undergraduate Students</h2>
+          <div className="team-group">
+            <div className="team-member">
+              <img src="/climatepub4kg/images/Reizas.jpg" alt="Eric Reizas" />
+              <div className="team-info">
+                <h3>Eric Reizas</h3>
+              </div>
+            </div>
+            <div className="team-member">
+              <img src="/climatepub4kg/images/Hageman.jpg" alt="Caleb Hageman" />
+              <div className="team-info">
+                <h3>Caleb Hageman</h3>
+              </div>
             </div>
           </div>
-          {/* Bottom row (3 people) */}
-          <div className="team-member">
-            <img src="/climatepub4kg/images/Zhang.jpg" alt="Team Member 5" />
-            <div className="team-info">
-              <h3>Qi Zhang <br></br>
-                Graduate Student
-              </h3>
-              {/* <p>chris.green@example.com</p> */}
+
+
+          <h2>Collaborators </h2>
+          <div className="team-group">
+            <div className="team-member">
+              <img src="/climatepub4kg/images/Dunne.jpg" alt="John Dunne" />
+              <div className="team-info">
+                <h3>John Dunne</h3>
+              </div>
+            </div>
+            <div className="team-member">
+              <img src="/climatepub4kg/images/Berkheimer.jpg" alt="Ryan Berkheimer" />
+              <div className="team-info">
+                <h3>Ryan Berkheimer</h3>
+              </div>
             </div>
           </div>
-          <div className="team-member">
-            <img src="/climatepub4kg/images/Reizas.jpg" alt="Team Member 6" />
-            <div className="team-info">
-              <h3>Eric Reizas<br></br>
-                Undergraduate Student
-              </h3>
-              {/* <p>samantha.blue@example.com</p> */}
-            </div>
-          </div>
-          <div className="team-member">
-            <img src="/climatepub4kg/images/Hageman.jpg" alt="Team Member 7" />
-            <div className="team-info">
-              <h3>Caleb Hageman<br></br>
-                Undergraduate Student
-              </h3>
-              {/* <p>daniel.gray@example.com</p> */}
-            </div>
-          </div>
-          <div className="team-member">
-            <img src="/climatepub4kg/images/Acharya.jpg" alt="Team Member 8" />
-            <div className="team-info">
-              <h3>Aayush Acharya<br></br>
-                Graduate Student
-              </h3>
-              <p><a href="mailto:aayush.acharya@temple.edu">huitong.pan@temple.edu</a></p>
-            </div>
-          </div>
-        </div>
 
           <hr />
         </section>
@@ -174,7 +188,7 @@ const App: React.FC = () => {
 
         {/* Footer Section */}
         <footer className="footer">
-          <p>ClimatePub4KG</p>
+          <img src="/climatepub4kg/images/NSFLogo.png" alt="Logo" />
           <p>
             This project is supported by the NSF under the grant{' '}
             <a href="https://nam10.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.nsf.gov%2Fawardsearch%2FshowAward%3FAWD_ID%3D2333789%26HistoricalAwards%3Dfalse&data=05%7C02%7Ccaleb.hageman%40temple.edu%7Ca440add2049c4257e94f08dd26bb629e%7C716e81efb52244738e3110bd02ccf6e5%7C0%7C0%7C638709308437444392%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=2mAxObLe4uZvMxd0MNsUD4x54NqSXIinPt6a%2Bd%2FoBRQ%3D&reserved=0" target="_blank" rel="noopener noreferrer">
