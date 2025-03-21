@@ -29,26 +29,29 @@ const App: React.FC = () => {
         {/* Introduction Section */}
         <section id="introduction" className="section">
           <h2>Introduction</h2>
-          <p>
-            The goal of this project is to create a comprehensive multimodal knowledge graph that highlights 
-            the most critical aspects of climate modeling, including data, climate models, and tasks. 
-            This knowledge graph encompasses both classical fluid dynamics models and AI-based models. 
-            By leveraging existing datasets and models, it ensures that past research investments are reused 
-            and fully integrated into future climate modeling efforts.
-
-            Automated methods developed in this project will infer relationships between 
-            papers, data, and tasks, enabling the suggestion of relevant artifacts for new
-            research endeavors. This will significantly reduce the time spent searching for 
-            these resources. By providing a structured representation of climate models, 
-            the project will make them more accessible and enhance their usability.
-
-            Additionally, the project contributes to the field of information retrieval with a
-            focus on named entity recognition and the creation of an expansive knowledge graph. 
-            Novel deep learning techniques will be developed for automatic entity and relation 
-            extraction, entity linking, and knowledge graph construction. This effort aims to 
-            interconnect climate modeling elements while fostering innovation, collaboration, 
-            and efficient reuse of research artifacts.
-          </p>
+           <p className="mb-4">
+        Climate science publications have grown exponentially, exceeding 1.3 million since 2020. While these studies contain valuable insights—such as model predictions, observational data, and impact assessments—relevant information often remains buried within unstructured text. This situation poses a challenge for researchers, policymakers, and anyone needing systematic, up-to-date knowledge.
+      </p>
+      <p className="mb-4">
+        Recent advances in Large Language Models (LLMs) promise a way forward, offering powerful text processing and generalization abilities. However, LLMs often struggle with specialized domains like climate science, where rare or evolving terminology (e.g., “teleconnections” or “Arctic amplification”) can lead to missed concepts or incorrect associations. In other words, while LLMs excel at broad knowledge, they require domain-specific grounding to truly handle the complexity and precision demanded by climate research.
+      </p>
+      <p className="mb-4">
+        <strong>ClimatePub4KG</strong> bridges this gap by:
+      </p>
+      <ul className="list-decimal list-inside mb-4 space-y-2">
+        <li>
+          <strong>Aggregating Climate Publications:</strong> We curate a large repository of climate-related texts, ensuring coverage of a wide range of topics, from Earth system modeling to policy-driven studies.
+        </li>
+        <li>
+          <strong>Taxonomy-Guided Annotation:</strong> We employ a climate-specific taxonomy (e.g., GCMD+) to anchor entity and relationship extraction, improving both accuracy and consistency of the extracted knowledge.
+        </li>
+        <li>
+          <strong>Weak Supervision + Expert Validation:</strong> We leverage LLMs for initial annotations and refine them through a human-in-the-loop process, ensuring high-quality results while reducing manual workload.
+        </li>
+      </ul>
+      <p className="mb-4">
+        By transforming unstructured publications into machine-readable knowledge, ClimatePub4KG accelerates literature reviews, supports data-driven policymaking, and enriches climate modeling with actionable insights. Our open-access approach invites collaboration, fostering continued enhancements in both AI methodologies and climate science applications.
+      </p>
           <hr />
         </section>
 
