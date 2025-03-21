@@ -83,7 +83,7 @@ const App: React.FC = () => {
           <p>MeasuredAt: A variable or parameter (source_entity) is quantified or recorded at a geographic location (target_entity).</p>
           <p>MountedOn: An instrument or measurement device (source_entity) is physically attached or installed on a platform (target_entity).</p>
           <p>TargetsLocation: An experiment, project, model, weather event, natural hazard, teleconnection, or ocean circulation (source_entity) is designed to study, simulate, or focus on a specific geographic location (target_entity).</p>
-
+          <hr />
           </section>
 
         {/* GCMD+ Taxonomy Section */}
