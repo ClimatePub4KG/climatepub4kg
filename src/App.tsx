@@ -10,6 +10,7 @@ const App: React.FC = () => {
           <div className="nav-container">
             <ul className="nav-links">
               <li><a href="#introduction">Introduction</a></li>
+              <li><a href="#types">Entity & Relations</a></li>
               <li><a href="#ClimatePub4KG">ClimatePub4KG</a></li>
               <li><a href="#overview">Overview</a></li>
               <li><a href="#team">Team</a></li>
@@ -54,7 +55,10 @@ const App: React.FC = () => {
       </p>
           <hr />
 
-          <section>
+        </section>
+        
+        {/* Types and Definitions Section */}
+        <section id="types" className="section">
           <h2>Entity Types and Definitions</h2>
           <p>A project refers to the scientific program, field campaign, or project from which the data were collected.</p>
           <p>A location is a place on Earth, a location within Earth, a vertical location, or a location outside of the Earth.</p>
@@ -81,7 +85,6 @@ const App: React.FC = () => {
           <p>TargetsLocation: An experiment, project, model, weather event, natural hazard, teleconnection, or ocean circulation (source_entity) is designed to study, simulate, or focus on a specific geographic location (target_entity).</p>
 
           </section>
-        </section>
 
         {/* GCMD+ Taxonomy Section */}
         <section id="ClimatePub4KG" className="section">
