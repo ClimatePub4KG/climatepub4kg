@@ -153,12 +153,6 @@ const App: React.FC = () => {
                 <h3>Adamu Mustapha</h3>
               </div>
             </div>
-            <div className="team-member">
-              <img src="/climatepub4kg/images/Rudko.jpg" alt="Michael Rudko" />
-              <div className="team-info">
-                <h3>Michael Rudko</h3>
-              </div>
-            </div>
           </div>
 
           <h2>Graduate Students</h2>
