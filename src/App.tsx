@@ -13,6 +13,7 @@ const App: React.FC = () => {
               <li><a href="#types">Entity & Relations</a></li>
               <li><a href="#ClimatePub4KG">ClimatePub4KG</a></li>
               <li><a href="#overview">Overview</a></li>
+              <li><a href="#ontology-graph">Ontology Graph</a></li>
               <li><a href="#team">Team</a></li>
               <li>
                 <a href="http://54.208.88.134:80" target="_blank" rel="noopener noreferrer">
@@ -109,6 +110,22 @@ const App: React.FC = () => {
           <hr />
         </section>
 
+        {/* Ontology Graph Section */}
+        <section id = "ontology-graph" className = "section">
+          <h2>Ontology Graph</h2>
+          <p>
+            The Ontology Graph below illustrates the structure and semantic relationships extracted and defined in ClimatePub4KG. It serves as a foundation for entity linking and inference within the knowledge graph.
+          </p>
+          <div style={{ textAlign: "center", marginTop: "1rem" }}>
+            <img
+              src="/climatepub4kg/images/graph.svg"
+              alt="Ontology Graph"
+              style={{ maxWidth: "100%", height: "auto", borderRadius: "8px", border: "1px solid #ccc" }}
+            />
+          </div>
+          <hr />
+        </section>
+
         {/* Method Overview Section */}
         <section id="overview" className="section">
           <h2>Who uses it?</h2>
@@ -191,9 +208,9 @@ const App: React.FC = () => {
               </div>
             </div>
             <div className="team-member">
-              <img src="/climatepub4kg/images/Hageman.jpg" alt="Caleb Hageman" />
+              <img src="/climatepub4kg/images/temp.jpg" alt="Vinh Nguyen" />
               <div className="team-info">
-                <h3>Caleb Hageman</h3>
+                <h3>Vinh Nguyen</h3>
               </div>
             </div>
           </div>
