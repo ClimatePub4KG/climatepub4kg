@@ -191,9 +191,9 @@ const App: React.FC = () => {
               </div>
             </div>
             <div className="team-member">
-              <img src="/climatepub4kg/images/Hageman.jpg" alt="Caleb Hageman" />
+              <img src="/climatepub4kg/images/temp.jpg" alt="Vinh Nguyen" />
               <div className="team-info">
-                <h3>Caleb Hageman</h3>
+                <h3>Vinh Nguyen</h3>
               </div>
             </div>
           </div>
