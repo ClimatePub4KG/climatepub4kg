@@ -118,7 +118,7 @@ const App: React.FC = () => {
           </p>
           <div style={{ textAlign: "center", marginTop: "1rem" }}>
             <img
-              //src="/climatepub4kg/images/temp.jpg"
+              src="/climatepub4kg/images/graph.svg"
               alt="Ontology Graph"
               style={{ maxWidth: "100%", height: "auto", borderRadius: "8px", border: "1px solid #ccc" }}
             />
