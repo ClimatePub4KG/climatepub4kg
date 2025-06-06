@@ -16,7 +16,7 @@ const App: React.FC = () => {
               <li><a href="#ontology-graph">Ontology Graph</a></li>
               <li><a href="#team">Team</a></li>
               <li>
-                <a href="http://54.208.88.134:80" target="_blank" rel="noopener noreferrer">
+                <a href="https://kgchatbot.templeuni.com" target="_blank" rel="noopener noreferrer">
                   Chatbot
                 </a>
               </li>
