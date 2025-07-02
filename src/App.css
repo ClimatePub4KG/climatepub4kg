@@ -37,6 +37,10 @@
   z-index: 1000; /* Ensures the nav stays above other elements */
 }
 
+.highlight-nav-container {
+  background-color: #f1cd70; /* Background color for the highlight nav container */
+}
+
 /* Navigation Links */
 .nav-links {
   display: inline-block; /* Keeps links inline */
